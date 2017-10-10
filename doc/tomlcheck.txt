@@ -1,0 +1,30 @@
+*tomlcheck* Vim syntastic integration for TOML files
+
+=====================================================================
+CONTENTS                                               *TomlContents*
+
+    1. Usage ............................................ |TomlUsage|
+    2. Config .......................................... |TomlConfig|
+
+=====================================================================
+Section 1: Usage                                          *TomlUsage*
+
+This plugin integrates with Syntastic by default, but it can also be
+called manually.
+
+:TomlCheck                                               *:TomlCheck*
+    Check the current file.
+
+<Plug>TomlCheck
+    Keybinding to the |TomlCheck| command. You can assign it by
+    putting something like the following in your .vimrc >
+        au BufNewFile,BufRead *.toml nnoremap <leader>t <Plug>TomlCheck
+    <
+
+=====================================================================
+Section 2: Configuration                                 *TomlConfig*
+
+To disable tomlcheck as one of the default linters, add the following
+somewhere in your .vimrc >
+    let g:syntastic_toml_checkers = []
+<
