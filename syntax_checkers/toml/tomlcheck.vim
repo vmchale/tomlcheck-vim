@@ -13,7 +13,7 @@ function! SyntaxCheckers_toml_tomlcheck_GetLocList() dict
                 \ 'fname': shellescape(expand('%'))})
 
     let errorformat =
-                \ '%E%f%\:%l%\:%c,' .
+                \ '%E%f%\:%l%\:%c%\:,' .
                 \ '%E%m,'
 
     let loclist = SyntasticMake({
