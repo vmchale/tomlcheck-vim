@@ -2,7 +2,7 @@
 
 ## Installation
 
-Install [tomlcheck](https://hackage.haskell.org/package/tomlcheck).
+Install [tomlcheck](https://github.com/vmchale/tomlcheck).
 Then install this plugin (example using
 [vim-plug](https://github.com/junegunn/vim-plug)) by adding the following to
 your `.vimrc`:
