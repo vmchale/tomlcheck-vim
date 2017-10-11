@@ -3,9 +3,16 @@
 ## Installation
 
 Install [tomlcheck](https://github.com/vmchale/tomlcheck).
-Then install this plugin (example using
-[vim-plug](https://github.com/junegunn/vim-plug)) by adding the following to
-your `.vimrc`:
+
+Next, install [syntastic](https://github.com/vim-syntastic/syntastic). Using
+[vim-plug](https://github.com/junegunn/vim-plug) this would amount to adding the
+following to your `.vimrc`.
+
+```vim
+Plug 'vim-syntastic/syntastic'
+```
+
+Then install this plugin. Using `vim-plug` again:
 
 ```vim
 Plug 'vmchale/tomlcheck-vim'
@@ -13,8 +20,4 @@ Plug 'vmchale/tomlcheck-vim'
 
 ## Configuration
 
-Put the following in your `.vimrc`:
-
-```vim
-let g:syntastic_toml_checkers = [ 'tomlcheck' ]
-```
+Call `:h tomlcheck` to see more extensive configuration options. 
